@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.scss";
 
 // Reset CSS
 import "normalize.css";
@@ -13,8 +12,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // CSS Toast
 import "react-toastify/dist/ReactToastify.css";
 
+// CSS App
+import "./App.scss";
+
 const App: React.FC = () => {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <p style={{ fontSize: "1.6rem" }}>beats</p>
+    </div>
+  );
 };
 
 export default App;
