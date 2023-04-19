@@ -1,0 +1,15 @@
+@import "../../sass/variable";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  .header__search-input {
+    width: 350px;
+    .ant-input-clear-icon {
+      display: flex;
+    }
+  }
+}

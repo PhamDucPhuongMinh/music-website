@@ -12,13 +12,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // CSS Toast
 import "react-toastify/dist/ReactToastify.css";
 
-// CSS App
+// CSS
 import "./App.scss";
+import Routes from "./routes";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <p style={{ fontSize: "1.6rem" }}>beats</p>
+      <Routes />
     </div>
   );
 };

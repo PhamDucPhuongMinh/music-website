@@ -1,0 +1,17 @@
+@import "../../sass/variable";
+
+.navigation {
+  width: $navigation-width;
+  position: fixed;
+  top: $header-height;
+  min-height: 100vh;
+  &__list {
+    list-style: none;
+    .navigation__item {
+      font-size: 1.6rem;
+      &__text {
+        line-height: 1;
+      }
+    }
+  }
+}
