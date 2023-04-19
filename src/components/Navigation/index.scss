@@ -5,13 +5,37 @@
   position: fixed;
   top: $header-height;
   min-height: 100vh;
+  transition: all 0.2s linear;
   &__list {
     list-style: none;
+    z-index: 1;
+    position: relative;
     .navigation__item {
       font-size: 1.6rem;
+      &:hover {
+        color: $red-color;
+      }
       &__text {
         line-height: 1;
       }
     }
   }
+}
+
+.navigation--hidden {
+  transform: translateX(-100%);
+}
+
+.navigation__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $navigation-width;
+  right: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.navigation__overlay.show {
+  display: block;
 }

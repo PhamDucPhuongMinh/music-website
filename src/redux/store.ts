@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import configAppReducer from "./slice/configAppSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    configApp: configAppReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

@@ -1,3 +1,7 @@
 @import "./_reset.scss";
 @import "./variable";
 @import "./pages";
+
+body {
+  background-color: $content-bg-color;
+}

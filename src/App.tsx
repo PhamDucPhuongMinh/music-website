@@ -15,8 +15,21 @@ import "react-toastify/dist/ReactToastify.css";
 // CSS
 import "./App.scss";
 import Routes from "./routes";
+import { useDispatch } from "react-redux";
+import { setNavigationStatus } from "./redux/slice/configAppSlice";
 
 const App: React.FC = () => {
+  const dispatch = useDispatch();
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  if (width < 768) {
+    dispatch(setNavigationStatus("hidden"));
+  } else {
+    dispatch(setNavigationStatus("showWithoutOverlay"));
+  }
   return (
     <div className="App">
       <Routes />

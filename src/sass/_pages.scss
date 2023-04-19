@@ -1,4 +1,14 @@
 .home-layout__content {
   margin-left: $navigation-width;
-  margin-top: $header-height;
+  padding-top: $header-height;
+  transition: all 0.2s linear;
+  background: #17171f;
+  min-height: 100vh;
+  @media only screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.home-layout__content.home-layout__content--hidden-navigation {
+  margin-left: 0;
 }

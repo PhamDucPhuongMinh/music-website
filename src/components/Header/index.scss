@@ -5,11 +5,16 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   height: $header-height;
   .header__search-input {
     width: 350px;
     .ant-input-clear-icon {
       display: flex;
     }
+  }
+  button {
+    height: 32px;
+    line-height: 1;
   }
 }
